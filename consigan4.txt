@@ -1,0 +1,2 @@
+El motor de plantilla que elegiría para mi proyecto sería Handlebars, por varias razones. Primero es fácil encontrar información, documentación y resoluciones de problemas. Es muy
+similar a html, lo cual hace más rápida la curva de aprendizaje. La sintaxis me parecio más amigable a la hora de interactuar con los objetos de javascript.

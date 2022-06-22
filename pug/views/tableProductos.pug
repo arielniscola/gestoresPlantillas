@@ -1,0 +1,29 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css')
+    body
+    div(class="conteiner col-sm-6")
+        h1 Lista de Productos
+        #prods 
+        if hayProductos
+            table(class="table table-striped")
+                tr
+                    th ID 
+                    th Nombre
+                    th Price
+                    th Imagen
+                tbody 
+                    each producto in prods
+                        tr
+                            td=producto.id 
+                            td=producto.title 
+                            td=producto.price 
+                            td 
+                                img(src=producto.thumbnail, alt="no found")
+        else
+            h3 No hay productos
+        br
+        a(href="/" type="button" class="btn btn-primary") Formulario 

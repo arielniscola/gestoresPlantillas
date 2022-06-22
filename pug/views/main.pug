@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css')
+    body
+    h1 Agregar Producto
+    div(class="conteiner col-sm-6")
+        form(method="post" action="/productos")
+            div.form-group
+                label(for="title" name="noombre") Nombre: 
+                input.form-control(type="text" name="title")
+            div.form-group
+                label(for="title" name="noombre") Precio: 
+                input.form-control(type="number" name="price")
+            div.form-group
+                label(for="title" name="noombre") URL imagen: 
+                input.form-control(type="text" name="thumbnail")
+            input.btn.btn-success(type="submit", placeholder="enviar")
+        br
+        div
+            a(href="/productos" type="button" class="btn btn-primary") Lista Productos 
